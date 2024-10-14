@@ -3,19 +3,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* UTILITY */
+.container {
+    width: 95%;
+    margin: 0 auto;
+
+    /* debug  */
+    /* min-height: 500px; */
+    border: 1px solid black;
 }
 
 
 /* LAYOUT */
-
-
-/* UTILITY */
+.recipe.grid-layout {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* TYPOGRAPHY */
+ul {
+    list-style: none;
+    margin: 20px 0 0;
+}
+
+.recipe-test.col li {
+    margin: 5px 0;
+}
 
 
 /* HEADER */
@@ -29,13 +47,48 @@ header {
 }
 
 #logo {
+    font-family: "Nerko One", cursive;
     color: #ff9619;
 }
 
+
 /* MAIN */
+main {
+    background-color: lightgray;
+
+    /* debag */
+    min-height: 1000px;
+}
+
+/* RECIPE SECTION */
+.category {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.recipe-title {
+    color: #4e3969;
+    font-size: 1rem;
+    margin: 5px 0 20px 0;
+}
+
+.recipe-type {
+    display: none;
+}
+
+.video {
+    width: 100%;
+    aspect-ratio: 2;
+}
+
+.recipe-test.col {
+    padding: 20px;
+    background-color: white;
+}
 
 
 /* FOOTER */
+
 
 
 
@@ -48,6 +101,35 @@ header {
         text-align: start;
         padding: 0 1.5rem;
     }
+
+    /* UTILITY */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* MAIN */ 
+    /* RECIPE SECTION */
+    .recipe-title {
+        font-size: 1.3rem;
+    }
+
+    .recipe-type {
+        display: inline;
+    }
+
+    .recipe-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .recipe-list li {
+        width: calc(100%/3);
+    }
+
+    
 }
 
 
@@ -58,4 +140,38 @@ header {
         text-align: start;
         padding: 0 1.5rem;
     }
+
+    /* UTILITY */
+    .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+    /* MAIN */
+    /* RECIPE SECTION */
+    .recipe-title {
+        font-size: 1.5rem;
+    }
+
+    .recipe-type {
+        display: inline;
+    }
+
+    .recipe.grid-layout {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-video.col {
+        width: 70%;
+    }
+
+    .recipe-test.col {
+        width: 30%;
+    }
+
+    .recipe-list li {
+        width: 100%;
+    }
+
 }

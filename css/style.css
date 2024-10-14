@@ -19,7 +19,18 @@
 
 
 /* HEADER */
+header {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
 
+    /* debug */
+    border: 1px solid black;
+}
+
+#logo {
+    color: #ff9619;
+}
 
 /* MAIN */
 
@@ -27,4 +38,24 @@
 /* FOOTER */
 
 
+
 /* RESPONSIVE */
+
+/* TABLET MODALITY */
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    header {
+        text-align: start;
+        padding: 0 1.5rem;
+    }
+}
+
+
+/* DESKTOP MODALITY */
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    header {
+        text-align: start;
+        padding: 0 1.5rem;
+    }
+}

@@ -22,7 +22,7 @@ img {
 }
 
 .section {
-    padding: 1rem 0;
+    padding: 1rem 0 0;
 }
 
 
@@ -41,6 +41,12 @@ ul {
 
 .recipe-test.col li {
     margin: 5px 0;
+}
+
+p {
+    text-align: start;
+    line-height: 1.8rem;
+    padding: 0 0 2rem;
 }
 
 
@@ -115,6 +121,22 @@ main {
     display: none;
 }
 
+/* PRESENTATION SECTION */
+.presentation.section hr {
+    width: 20%;
+    margin: 0.5rem 0 1rem;
+    border-color: #ff9619;
+}
+
+.presentation-article {
+    text-align: center;
+}
+
+#presentation-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
 
 /* FOOTER */
 
@@ -178,6 +200,15 @@ main {
         display: inline-block;
     }
 
+    /* PRESENTATION SECTION */
+    #presentation-img {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+    }
+
+
+
 }
 
 
@@ -234,5 +265,12 @@ main {
         display: inline-block;
     }
 
+
+    /* PRESENTATION SECTION */
+    #presentation-img {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+    }
 
 }

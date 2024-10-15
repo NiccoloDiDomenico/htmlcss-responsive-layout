@@ -110,7 +110,9 @@ main {
 
 .video {
     width: 100%;
+    border: 0;
     aspect-ratio: 2;
+    display: block;
 }
 
 .recipe-test.col {
@@ -121,7 +123,8 @@ main {
 /* ICON SECTION */
 .icon-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .icon-list li {
@@ -174,9 +177,9 @@ footer {
 
 .nav-list.footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 2rem;
     padding: 0 1rem;
 }
 
@@ -185,6 +188,7 @@ footer {
 /* RESPONSIVE */
 /* LARGE MOBILE MODALITY */
 @media screen and (min-width: 576px) {
+
     /* ICON SECTION */
     .icon-list {
         gap: 50px;
@@ -198,7 +202,7 @@ footer {
         text-align: center;
     }
 
-    
+
     /* PRESENTATION SECTION */
     #presentation-img {
         width: 300px;
